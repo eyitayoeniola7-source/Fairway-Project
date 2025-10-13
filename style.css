@@ -1,0 +1,24 @@
+* {
+    box-sizing: border-box;
+}
+img {
+    box-sizing: content-box;
+    overflow: clip;
+    vertical-align: middle;
+    max-width: 100%;
+    display: inline-block;
+    border: 0;
+}
+
+.bg-sparkle {
+    background-color: #000;
+    background-image: url('../image/black sparkle.jpg');
+    background-repeat: repeat;
+}
+
+.swiper-slide {
+            transition: transform 0.3s ease;
+        }
+        .swiper-slide-active {
+            transform: scale(1.05);
+        }
