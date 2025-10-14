@@ -25,6 +25,7 @@
       
     </script>
     <link rel="stylesheet" href="style.css">
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;500;600;700&display=swap" rel="stylesheet">
     <link href="https://fonts.googleapis.com/css2?family=Bebas+Neue&display=swap" rel="stylesheet">
    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css">
    <link href="https://unpkg.com/ionicons@4.5.10-0/dist/css/ionicons.min.css" rel="stylesheet">
@@ -38,7 +39,7 @@
     }
    </style>
 </head>
-<body class="text-lg font-normal text-slate-800">
+<body class="text-lg  text-slate-800 ">
     <!--Navigation Bar-->
     <nav class=" bg-white fixed w-full top-0 left-0 shadow z-50">
         <div class="flex items-center justify-between px-5 py-3">
@@ -49,16 +50,18 @@
                     loading="eager" width="Auto" fetchpriority="high" alt="logo" rel="preload"></a>
             </div>
             <!--Nav links-->
-            <ul class="md:flex space-x-8 text-base">
+            <div class="nav-links md:static absolute bg-white md:min-h-fit min-h-[60vh] left-o top-[100%] md:w-auto w-full flex items-center px-5"> 
+            <ul class="flex md:flex-row flex-col md:items-center md:gap-[4vw] gap-8 space-x-8 text-base">
                 <li><a href="#" class="text-green-700 hover:underline-offset-4">About Us</a></li>
-                <li><a href="#" class="text-green-700 hover:underline-offset-4">Locations</a></li>
+                <li><a href="location.html" class="text-green-700 hover:underline-offset-4">Locations</a></li>
                 <li><a href="#" class="text-green-700 hover:underline-offset-4">Loan Products</a></li>
                 <li><a href="#" class="text-green-700 hover:underline-offset-4">Calculators</a></li>
                 <li><a href="#" class="text-green-700 hover:underline-offset-4">Videos</a></li>
                 <li><a href="#" class="text-green-700 hover:underline-offset-4">Careers</a></li>
             </ul>
+            </div>
 
-            <div class="md:flex items-center space-x-3">
+            <div class="md:flex items-center gap-6 space-x-3">
                 <button class="bg-orange-500 text-white px-4 py-2 rounded-md hover:bg-orange-600">Get started</button>
                 <div class="flex flex-col items-center cursor-pointer hover:opacity-40 ">
                 <ion-icon name="search"></ion-icon>
@@ -66,7 +69,7 @@
                 </div>
 
             <div class="md:flex flex-col cursor-pointer text-2xl hover:opacity-40" id="menu-btn">
-                <ion-icon name="menu"></ion-icon>
+                <ion-icon onclick="onToggleMenu(this)" name="menu" class="text-3xl"></ion-icon>
                 <span class="text-sm text-green-950 font-medium mt-1">Menu</span>
             </div>
              </div>
@@ -194,8 +197,8 @@
     <section class="py-10 bg-white">
         <div class="container mx-auto px-8 max-w-7xl">
             <div class="text-center mb-12">
-                <h5 class="text-gray-800 text-sm uppercase mb-2">MORE THAN JUST A MORTGAGE</h5>
-                <h2 class="text-center font-bold text-4xl text-black">THE <span class="bg-green-600 text-white px-2">PERKS</span> OF THE PROCESS</h2>
+                <h5 class="text-green-800 text-sm uppercase mb-2">MORE THAN JUST A MORTGAGE</h5>
+                <h2 class="text-center font-extrabold text-7xl text-black"style="font-family: 'Bebas Neue', Impact, sans-serif; line-height: rem; font-size: 5rem;">THE <span class="bg-green-600 text-white px-2" style="font-family: 'Lost In South', sans-serif;">PERKS</span> OF THE PROCESS</h2>
             </div>
 
             <div class="grid grid-cols-1 md:grid-cols-3 gap-8">
@@ -257,7 +260,7 @@
                     <!-- Text on the right -->
                     <div>
                         <div class="text-green-600 font-semibold text-sm mb-3">MAKING AN IMPACT EVERY DAY</div>
-                        <h2 class="text-4xl font-bold text-gray-900 mb-4 tracking-tight"><span class="bg-green-700 text-white px-2">MORTGAGES</span> WITH A PURPOSE</h2>
+                        <h2 class="text-4xl font-bold text-gray-900 mb-4 tracking-tight" style="font-family: 'Bebas Neue', Impact, sans-serif; line-height: 6rem; font-size: 5rem;"><span class="bg-green-700 text-white px-2" style="font-family: 'Lost In South', sans-serif;">MORTGAGES</span> WITH A PURPOSE</h2>
                         <p class="text-gray-700 text-sm mb-6">At Fairway, we're committed to providing exceptional mortgage solutions tailored to your needs. Our dedicated loan officers work tirelessly to secure the best options and fastest turn times in the industry.</p>
                         <div class="flex items-center gap-6">
                             <button class="bg-green-600 text-white px-6 py-3 rounded-md font-semibold text-sm border-2 border-green-600 hover:bg-transparent hover:text-green-600 transition-all duration-300">About Fairway</button>
@@ -273,7 +276,7 @@
      <!-- Culture Meets Commitment Section -->
     <section class="py-16 bg-white">
         <div class="text-center px-8 mb-12 max-w-4xl mx-auto">
-            <h1 class="leading-tight text-6xl mb-12">CULTURE <br>MEETS COMMITMENT</h1>
+            <h1 class="leading-tight text-6xl mb-12" style="font-family: 'Bebas Neue', Impact, sans-serif; line-height: 6rem; font-size: 3rem;"><span style="font-family: 'Lost In South', sans-serif; font-size: 12rem">CULTURE</span> <br>MEETS COMMITMENT</h1>
             <h3 class="text-green-600 mb-8 font-semibold text-2xl">At Fairway, people are at the heart of what we do.</h3>
             <p class="text-base leading-relaxed">Through our nonprofit organizations, Fairway Cares and American Warrior Initiative (AWI), we are able to bring comfort, hope and support to people within the Fairway community and beyond. Each year both non-profit organizations are able to grow and impact more lives through the generous contributions of Fairway employees.</p>
         </div>
@@ -288,9 +291,9 @@
                 <div class="rounded-lg border-2 border-black shadow-md bg-white overflow-hidden">
                     <img src="https://cdn.prod.website-files.com/60b8fb458e70e017cee4b863/6864042b9e4e90c0de27d4ef_louise-thaxton-and-veteran-on-stage.avif" loading="lazy" alt="Recent AWI event picture with Louise Thaxton and elderly veteran" class="w-full object-cover h-64">
                     <div class="p- text-center">
-                        <h3 class="tracking-tight mt-6 font-bold text-4xl mb-6">AMERICAN WARRIOR INITIATIVE</h3>
+                        <h3 class="tracking-tight mt-6 font-bold text-4xl mb-6 whitespace-nowrap pr-4">AMERICAN WARRIOR INITIATIVE</h3>
                         <div class="border-t-2 border-black mb-6"></div>
-                        <p class="text-base mb-6">American Warrior Initiative (AWI) is a nonprofit organization backed by Fairway whose mission is to educate, encourage and inspire Americans to give back to our military.</p>
+                        <p class="text-base mb-6 px-6">American Warrior Initiative (AWI) is a nonprofit organization backed by Fairway whose mission is to educate, encourage and inspire Americans to give back to our military.</p>
                         <button class="bg-green-600 mb-6 text-white px-6 py-3 rounded-md font-semibold text-sm border-2 border-green-600 hover:bg-transparent hover:text-green-600 transition-all duration-300">View Their Website</button>
                     </div>
                 </div>
@@ -301,7 +304,7 @@
                     <div class="p- text-center">
                         <h3 class="text-4xl font-bold mt-6 tracking-tight mb-6">FAIRWAY CARES</h3>
                         <div class="border-t-2 border-black mb-6"></div>
-                        <p class="text-base mb-6">Fairway Cares is the charitable arm of Fairway Home Mortgage. For over 20 years, Fairway's nationwide network of employees has demonstrated a deep care for the communities and people they serve.</p>
+                        <p class="text-base mb-6 px-6">Fairway Cares is the charitable arm of Fairway Home Mortgage. For over 20 years, Fairway's nationwide network of employees has demonstrated a deep care for the communities and people they serve.</p>
                         <button class="bg-green-600 mb-6 text-white px-6 py-3 rounded-md font-semibold text-sm border-2 border-green-600 hover:bg-transparent hover:text-green-600 transition-all duration-300">Find Out More</button>
                     </div>
                 </div>
@@ -313,8 +316,8 @@
     <!-- Serving borrowers is our number one priority Section -->
     <section class="py-20 bg-green-700">
         <div class="text-center px-8 mb-12 max-w-7xl mx-auto">
-            <h1 class="tracking-tight text-5xl font-bold mb-8 text-black">SERVING BORROWERS IS OUR NUMBER<br>ONE PRIORITY</h1>
-            <h3 class="mb-6 text-black">Real Homebuyer experiences from recently closed loans</h3>
+            <h1 class="leading-tight text-5xl font-semibold mb-4 text-black" style="font-family: 'Bebas Neue', Impact, sans-serif; line-height: rem; font-size: 3rem;">SERVING BORROWERS IS OUR NUMBER<br>ONE PRIORITY</h1>
+            <h3 class="mb-6 text-black text-sm">Real Homebuyer experiences from recently closed loans</h3>
             
             <!-- Swiper Slider -->
             <div class="swiper-container max-w-6xl mx-auto px-4 relative pb-16">
@@ -498,121 +501,132 @@
             
         </div>
     </section>
+         
+        <!-- Pre-Footer Contact Section -->
+    <section class="bg-gray-100 text-gray-800 py-12">
+        <div class="max-w-full mx-auto px-6">
+            <div class="flex flex-wrap justify-center max-w-7xl mx-auto  overflow-x-hidden gap-6">
+                <!-- Company Info Box - Small and on the left -->
+                <div class="bg-white shadow-lg rounded-lg p-6 w-80 flex-shrink-0">
+                    <!-- Logo centered -->
+                    <img class="w-40 mb-4 mx-auto" src="https://cdn.prod.website-files.com/60b8fb458e70e017cee4b863/685d7df9759b22ce67d35f82_404e420d0cf7bb3a5fe79489f9ed3f1d_Fairway%20Home%20Mortgage_logo__Horizontal_Color.avif" loading="lazy" alt="logo">
+                    
+                    <!-- Social Icons -->
+                    <div class="flex gap-3 mb-4 justify-center">
+                        <a href="https://www.facebook.com/FairwayMortgage" target="_blank" class=" bg-green-800 p-1.5 rounded-full hover:border border border-transparent transition">
+                            <img class="text-green-700 hover:bg-green-700 rounded-full w-8 h-8" src="https://cdn.prod.website-files.com/60b8fb458e70e017cee4b863/611c67b9ed3df1bc0e22e075_facebook-icon-white%20copy.png" loading="lazy" width="28" alt="Facebook Icon">
+                        </a>
+                        <a href="https://www.instagram.com/fairwayimc/" target="_blank" class=" bg-green-800 p-1.5 rounded-full hover:border border border-transparent transition">
+                            <img  class="text-green-700 hover:bg-green-700 rounded-full w-8 h-8" src="https://cdn.prod.website-files.com/60b8fb458e70e017cee4b863/611c689ef43e1097c2cd7811_instagram-icon-white%20copy.png" loading="lazy" width="28" alt="Instagram Icon">
+                        </a>
+                        <a href="https://www.linkedin.com/company/fairway-independent-mortgage-corporation/mycompany/" target="_blank" class=" bg-green-800 p-1.5 rounded-full hover:border border border-transparent transition">
+                            <img class="text-green-700 hover:bg-green-700 rounded-full w-8 h-8" src="https://cdn.prod.website-files.com/60b8fb458e70e017cee4b863/611c68c0cc1fac45170d2dd4_linkedin-icon-white%20copy.png" loading="lazy" width="28" alt="LinkedIn Icon">
+                        </a>
+                        <a href="https://twitter.com/FairwayMC" target="_blank" class="bg-green-800 p-1.5 rounded-full hover:border border border-transparent transition">
+                            <img class="text-green-700 hover:bg-green-700 rounded-full w-8 h-8" src="https://cdn.prod.website-files.com/60b8fb458e70e017cee4b863/611c68d3f0c7e54fbe9f8f66_twitter-icon-white%20copy.png" loading="lazy" width="28" alt="X formerly known as Twitter">
+                        </a>
+                    </div>
 
-    <!-- Pre-Footer Contact Section -->
-    <section class="bg-white text-white py-12">
-        <div class="max-w-6xl mx-auto px-6">
-            <!-- Company Info Box -->
-            <div class="bg-white shadow-sm rounded-lg p-6 mb-8 max-w-md mx-auto">
-                <img class="w-48 mb-4" src="https://cdn.prod.website-files.com/60b8fb458e70e017cee4b863/685d7df9759b22ce67d35f82_404e420d0cf7bb3a5fe79489f9ed3f1d_Fairway%20Home%20Mortgage_logo__Horizontal_Color.avif" loading="lazy" alt="logo">
-                
-                <!-- Social Icons -->
-                <div class="flex gap-3 mb-4">
-                    <a href="https://www.facebook.com/FairwayMortgage" target="_blank" class="hover:opacity-70">
-                        <img src="https://cdn.prod.website-files.com/60b8fb458e70e017cee4b863/611c67b9ed3df1bc0e22e075_facebook-icon-white%20copy.png" loading="lazy" width="30" alt="Facebook Icon">
-                    </a>
-                    <a href="https://www.instagram.com/fairwayimc/" target="_blank" class="hover:opacity-70">
-                        <img src="https://cdn.prod.website-files.com/60b8fb458e70e017cee4b863/611c689ef43e1097c2cd7811_instagram-icon-white%20copy.png" loading="lazy" width="30" alt="Instagram Icon">
-                    </a>
-                    <a href="https://www.linkedin.com/company/fairway-independent-mortgage-corporation/mycompany/" target="_blank" class="hover:opacity-70">
-                        <img src="https://cdn.prod.website-files.com/60b8fb458e70e017cee4b863/611c68c0cc1fac45170d2dd4_linkedin-icon-white%20copy.png" loading="lazy" width="30" alt="LinkedIn Icon">
-                    </a>
-                    <a href="https://twitter.com/FairwayMC" target="_blank" class="hover:opacity-70">
-                        <img src="https://cdn.prod.website-files.com/60b8fb458e70e017cee4b863/611c68d3f0c7e54fbe9f8f66_twitter-icon-white%20copy.png" loading="lazy" width="30" alt="X formerly known as Twitter">
-                    </a>
-                </div>
-
-                <div class="text-sm space-y-2">
-                    <div><strong>Madison Headquarters Location</strong></div>
-                    <div>4750 S. Biltmore Lane, Madison, WI 53718</div>
-                    <div><strong>Toll Free: 866-912-4800</strong></div>
-                    <div class="text-gray-400">Monday-Friday, 8:30 a.m.-5:00 p.m. Central</div>
-                    <a href="https://nmlsconsumeraccess.org" target="_blank" class="text-green-400 hover:text-green-300 inline-block mt-2">NMLS Consumer Access</a>
-                </div>
-            </div>
-
-            <!-- Contact Sections - Horizontal -->
-            <div class="flex flex-wrap justify-center gap-6 mb-8">
-                <!-- Customer Service -->
-                <div class="bg-white rounded-lg p-6 border-2 border-transparent hover:border-green-500 transition-colors duration-300 flex-shrink-0 w-64">
-                    <div class="text-lg font-semibold mb-3">Customer Service</div>
-                    <div class="text-sm space-y-2">
-                        <div><strong>Toll Free:</strong> <span>800-201-7544</span></div>
-                        <a href="/contact-us/contact-us" class="text-green-400 hover:text-green-300 block">Contact Customer Service</a>
-                        <a href="/legal/servicing-rights-new-york" class="text-green-400 hover:text-green-300 block">Loan Serviced in New York? Click Here</a>
+                    <div class="text-base space-y-2 text-left">
+                        <div class="font-semibold text-gray-900">Madison Headquarters Location</div>
+                        <div class="text-sm">4750 S. Biltmore Lane, Madison, WI 53718</div>
+                        <div class="font-bold text-gray-900">Toll Free: 866-912-4800</div>
+                        <div class="text-gray-600 text-sm">Monday-Friday, 8:30 a.m.-5:00 p.m. Central</div>
+                        <a href="https://nmlsconsumeraccess.org" target="_blank" class="text-green-600 text-sm hover:text-green-700 underline hover:no-underline inline-block mt-2 font-medium">NMLS Consumer Access</a>
                     </div>
                 </div>
 
-                <!-- Report Fraud -->
-                <div class="bg-white shadow-sm rounded-lg p-6 border-2 border-transparent hover:border-green-500 transition-colors duration-300 flex-shrink-0 w-64">
-                    <div class="text-lg font-semibold mb-3">Report Fraud / Suspicious Activity</div>
-                    <div class="text-sm space-y-2">
-                        <div><strong>Hotline:</strong> <span>855-920-0002</span></div>
-                        <a href="https://www.lighthouse-services.com/fairwaymc" target="_blank" class="text-green-400 hover:text-green-300 block">Report An Incident Online, click here</a>
-                    </div>
-                </div>
+            
+                 
+                <!-- Right side content -->
+                <div class="flex-1 ">
+                    <!-- Contact Sections - Horizontal -->
+                    <div class="flex flex-wrap gap-20 mb-6">
+                        <!-- Customer Service -->
+                        <div class="p-4 border-2 inline-block  border-transparent hover:border-green-500  transition-colors duration-300 flex-1 min-w-[200px] rounded-lg">
+                            <div class="text-base font-semibold mb-1 text-gray-900 pb-2 border-b-2 border-dotted border-gray-400">Customer Service</div>
+                            <div class="text-sm space-y-2 mt-3">
+                                <div><strong>Toll Free:</strong> <span>800-201-7544</span></div>
+                                <a href="/contact-us/contact-us" class="text-green-600 hover:text-green-700 underline hover:no-underline block font-medium">Contact Customer Service</a>
+                                <a href="/legal/servicing-rights-new-york" class="text-green-600 hover:text-green-700 underline hover:no-underline block font-medium">Loan Serviced in New York? Click Here</a>
+                            </div>
+                        </div>
 
-                <!-- Complaints -->
-                <div class="bg-white shadow-sm rounded-lg p-6 border-2 border-transparent hover:border-green-500 transition-colors duration-300 flex-shrink-0 w-64">
-                    <div class="text-lg font-semibold mb-3">Complaints</div>
-                    <div class="text-sm space-y-2">
-                        <div><strong>Toll Free:</strong> <span>877-699-0353</span></div>
-                        <a href="#" class="text-green-400 hover:text-green-300 block">Submit Complaint</a>
+                        <!-- Report Fraud -->
+                        <div class="px-12 py-6 pl-4 border-2 border-transparent hover:border-green-500 transition-colors duration-300 flex-1 min-w-[200px] rounded-lg">
+                            <div class="text-base whitespace-nowrap font-semibold mb-1 text-gray-900 pb-2 border-b-2 border-dotted inline-block underline-offset-4 border-gray-400">Report Fraud / Suspicious Activity</div>
+                            <div class="text-sm space-y-2 mt-3">
+                                <div><strong>Hotline:</strong> <span>855-920-0002</span></div>
+                                <a href="https://www.lighthouse-services.com/fairwaymc" target="_blank" class="text-green-600 hover:text-green-700 underline hover:no-underline block font-medium">Report An Incident Online, click here</a>
+                            </div>
+                        </div>
+
+                        <!-- Complaints -->
+                        <div class="p-4 border-2  border-transparent hover:border-green-500 transition-colors duration-300 flex-1 min-w-[200px] rounded-lg">
+                            <div class="text-base font-semibold mb-1 pt-2 text-gray-900 pb-2 border-b-2 border-dotted border-gray-400">Complaints</div>
+                            <div class="text-sm space-y-2 mt-3">
+                                <div><strong>Toll Free:</strong> <span>877-699-0353</span></div>
+                                <a href="#" class="text-green-600 hover:text-green-700 underline hover:no-underline block font-medium">Submit Complaint</a>
+                            </div>
+                        </div>
                     </div>
-                </div>
-            </div>
 
             <!-- Legal Information Links -->
             <div class="max-w-4xl mx-auto">
-                <div class="text-center mb-4">
-                    <h3 class="text-lg font-semibold">Legal Information & Links</h3>
+                <div class="text-left mb-4">
+                    <h3 class="text-lg font-semibold border-b-2 border-dotted border-gray-400">Legal Information & Links</h3>
                 </div>
                 <div class="flex flex-wrap justify-center gap-4 text-sm">
-                    <a href="/legal/privacy-policy" class="text-green-400 hover:text-green-300">Privacy Policy</a>
+                    <a href="/legal/privacy-policy" class="text-green-600 underline hover:text-green-800 hover:no-underline">Privacy Policy</a>
                     <span class="text-gray-600">|</span>
-                    <a href="/legal/terms-of-use" class="text-green-400 hover:text-green-300">Terms Of Use</a>
+                    <a href="/legal/terms-of-use" class="text-green-600 underline hover:text-green-800 hover:no-underline">Terms Of Use</a>
                     <span class="text-gray-600">|</span>
-                    <a href="/legal/legal-disclosures" class="text-green-400 hover:text-green-300">Legal Disclosures</a>
+                    <a href="/legal/legal-disclosures" class="text-green-600 underline hover:text-green-800 hover:no-underline">Legal Disclosures</a>
                     <span class="text-gray-600">|</span>
                     <a href="https://s3.amazonaws.com/imghost.fairwaymarketing/legal/FIMC-CO+and+BR+License+List.pdf" target="_blank" class="text-green-400 hover:text-green-300">Licensing</a>
                     <span class="text-gray-600">|</span>
-                    <a href="/legal/texas-consumer-complaints" class="text-green-400 hover:text-green-300">Texas Consumer Complaints</a>
+                    <a href="/legal/texas-consumer-complaints" class="text-green-600 underline hover:text-green-800 hover:no-underline">Texas Consumer Complaints</a>
                     <span class="text-gray-600">|</span>
-                    <a href="/legal/il-community-reinvestment-notice" class="text-green-400 hover:text-green-300">IL Community Reinvestment Notice</a>
+                    <a href="/legal/il-community-reinvestment-notice" class="text-green-600 underline hover:text-green-800 hover:no-underline">IL Community Reinvestment Notice</a>
                 </div>
             </div>
         </div>
     </section>
 
-    <footer>
-        <div><strong>&copy; Copyright Fairway Independent Mortgage Corporation</strong>| NMLS Entity ID #2289 |
-        <a href="https://nmlsconsumeraccess.org/EntityDetails.aspx/COMPANY/2289" target="_blank" class="footer-base-link">www.nmlsconsumeraccess.org</a>
+    <footer class="bg-gray-800 text-white py-3">
+        <div class="max-w-7xl mx-auto flex justify-center px-4 items-center justify-between gap-4 text-xs">
+        <div class=" flex-shrink-0"><strong>&copy; Copyright Fairway Independent Mortgage Corporation</strong>| NMLS Entity ID #2289 |
+        <a href="https://nmlsconsumeraccess.org/EntityDetails.aspx/COMPANY/2289" target="_blank" class="underline hover:text-lime-500 transition">www.nmlsconsumeraccess.org</a>
         . All Rights reserved.
           </div>
+         
 
+         <div class="flex items-center gap-3  "></div>
           <div>
-            <a data-wf-native-id-path="f8433470-855a-9a57-687c-980a2aab5376:4e1ab34b-b874-33f7-6b60-3acc583bad73" data-wf-ao-click-engagement-tracking="true" data-wf-element-id="4e1ab34b-b874-33f7-6b60-3acc583bad73" data-wf-component-context="%5B%7B%22componentId%22%3A%228d5b15d3-8d1e-a157-bf2b-09a031eecd48%22%2C%22instanceId%22%3A%22f8433470-855a-9a57-687c-980a2aab5376%22%7D%5D" href="https://www.nmlsconsumeraccess.org/" target="_blank" class="nmls-link w-inline-block"><img src="https://cdn.prod.website-files.com/60b8fb458e70e017cee4b863/611d150fccadee3598609f02_NMLSLogo-white-black.png" loading="lazy" width="55" sizes="(max-width: 1279px) 55px, (max-width: 1439px) 4vw, 55px" alt="" srcset="https://cdn.prod.website-files.com/60b8fb458e70e017cee4b863/611d150fccadee3598609f02_NMLSLogo-white-black-p-500.png 500w, https://cdn.prod.website-files.com/60b8fb458e70e017cee4b863/611d150fccadee3598609f02_NMLSLogo-white-black.png 1246w" class="nmls-logo"></a>
-            <img src="https://cdn.prod.website-files.com/60b8fb458e70e017cee4b863/611d150fccadee3598609f02_NMLSLogo-white-black.png" loading="lazy" width="55" sizes="(max-width: 1279px) 55px, (max-width: 1439px) 4vw, 55px" alt="" srcset="https://cdn.prod.website-files.com/60b8fb458e70e017cee4b863/611d150fccadee3598609f02_NMLSLogo-white-black-p-500.png 500w, https://cdn.prod.website-files.com/60b8fb458e70e017cee4b863/611d150fccadee3598609f02_NMLSLogo-white-black.png 1246w" class="nmls-logo">
+            <a class="size-16" data-wf-native-id-path="f8433470-855a-9a57-687c-980a2aab5376:4e1ab34b-b874-33f7-6b60-3acc583bad73" data-wf-ao-click-engagement-tracking="true" data-wf-element-id="4e1ab34b-b874-33f7-6b60-3acc583bad73" data-wf-component-context="%5B%7B%22componentId%22%3A%228d5b15d3-8d1e-a157-bf2b-09a031eecd48%22%2C%22instanceId%22%3A%22f8433470-855a-9a57-687c-980a2aab5376%22%7D%5D" href="https://www.nmlsconsumeraccess.org/" target="_blank" class="nmls-link w-inline-block"><img src="https://cdn.prod.website-files.com/60b8fb458e70e017cee4b863/611d150fccadee3598609f02_NMLSLogo-white-black.png" loading="lazy" width="55" sizes="(max-width: 1279px) 55px, (max-width: 1439px) 4vw, 55px" alt="" srcset="https://cdn.prod.website-files.com/60b8fb458e70e017cee4b863/611d150fccadee3598609f02_NMLSLogo-white-black-p-500.png 500w, https://cdn.prod.website-files.com/60b8fb458e70e017cee4b863/611d150fccadee3598609f02_NMLSLogo-white-black.png 1246w" ></a>
+        
           </div>
 
           <div>
-            <img src="https://cdn.prod.website-files.com/60b8fb458e70e017cee4b863/611d164fcecd69f94c23aee1_new%20eho%20logo%20transparent%20white.png" loading="lazy" width="50" alt="" class="fwy-icon">
+            <img  src="https://cdn.prod.website-files.com/60b8fb458e70e017cee4b863/611d164fcecd69f94c23aee1_new%20eho%20logo%20transparent%20white.png" loading="lazy" width="50" alt="" >
          </div>
 
          <div>
-            <img src="https://cdn.prod.website-files.com/60b8fb458e70e017cee4b863/62c7660b0fd4600f23f86c21_NAHREPcorporatememberLogowhitesmall%20(1).png" loading="lazy" width="Auto" alt="" class="fwy-icon">
+            <img class="text-9xl" src="https://cdn.prod.website-files.com/60b8fb458e70e017cee4b863/62c7660b0fd4600f23f86c21_NAHREPcorporatememberLogowhitesmall%20(1).png" loading="lazy" width="Auto" alt="" >
          </div>
 
          <div>
-            <div class="footer-base-icons"><img src="https://cdn.prod.website-files.com/60b8fb458e70e017cee4b863/6584b80be59dcf4099272a66_Womens%20Council%20of%20Realtors_WCR_%20Logo%20cv3.png" loading="lazy" width="Auto" alt="" class="fwy-icon"></div>
+            <div class="footer-base-icons"><img src="https://cdn.prod.website-files.com/60b8fb458e70e017cee4b863/6584b80be59dcf4099272a66_Womens%20Council%20of%20Realtors_WCR_%20Logo%20cv3.png" loading="lazy" width="Auto" alt="" ></div>
          </div>
 
          <div>
-            <img src="https://cdn.prod.website-files.com/60b8fb458e70e017cee4b863/611d15bc128c5aedf3f47ae1_FIMC_Logo_WHITE_Primary_Icon_Transparent.png" loading="lazy" width="50" sizes="(max-width: 1439px) 50px, (max-width: 1919px) 3vw, 50px" alt="" srcset="https://cdn.prod.website-files.com/60b8fb458e70e017cee4b863/611d15bc128c5aedf3f47ae1_FIMC_Logo_WHITE_Primary_Icon_Transparent-p-500.png 500w, https://cdn.prod.website-files.com/60b8fb458e70e017cee4b863/611d15bc128c5aedf3f47ae1_FIMC_Logo_WHITE_Primary_Icon_Transparent.png 789w" class="fwy-icon">
+            <img src="https://cdn.prod.website-files.com/60b8fb458e70e017cee4b863/611d15bc128c5aedf3f47ae1_FIMC_Logo_WHITE_Primary_Icon_Transparent.png" loading="lazy" width="50" sizes="(max-width: 1439px) 50px, (max-width: 1919px) 3vw, 50px" alt="" srcset="https://cdn.prod.website-files.com/60b8fb458e70e017cee4b863/611d15bc128c5aedf3f47ae1_FIMC_Logo_WHITE_Primary_Icon_Transparent-p-500.png 500w, https://cdn.prod.website-files.com/60b8fb458e70e017cee4b863/611d15bc128c5aedf3f47ae1_FIMC_Logo_WHITE_Primary_Icon_Transparent.png 789w" >
          </div>
 
          <div>
-            <img src="https://cdn.prod.website-files.com/60b8fb458e70e017cee4b863/62c7660b0fd4605b26f86c25_BBB%20Logo%20White.png" loading="lazy" width="Auto" alt="" class="fwy-icon">
+            <img src="https://cdn.prod.website-files.com/60b8fb458e70e017cee4b863/62c7660b0fd4605b26f86c25_BBB%20Logo%20White.png" loading="lazy" width="auto" alt="" >
+         </div>
+         </div>
          </div>
     </footer>
     
@@ -620,7 +634,13 @@
     <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
     <script type="module" src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.esm.js"></script>
     <script nomodule src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.js"></script>
-    
+    <script>
+        const navLinks = document.queryselector('.nav-links')
+        function onToggleMenu(e) {
+        e.name = e.name === 'menu' ? 'close' : 'menu'
+        navLinks.classlist.toggle('top-[9%]')
+        }
+    </script>
 </body>
 
 </html>
